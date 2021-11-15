@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block header %}
+    <!-- Page Header-->
+  <div class="jumbotron image_bkgnd">
+    <div class="container">
+      <h1>{{Title}}</h1>
+      <p>Here are all the anime expo information you want :)</p>
+      <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login</a></p>
+    </div>
+  </div>
+{% endblock %}
+{% block content %}
+        <!-- Post Content-->
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-4">
+                <h2>Recent expo</h2>
+                <p>Here are some of the latest information on anime expo, including second and third tier city comic conventions, offline events on xx works, only expo and more.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-4">
+                <h2>Ticket selling</h2>
+                <p>This is a collection of tickets for many recent anime expo's. Here you can buy tickets for the expo you want to attend or follow the anime expo's you are interested in that are not yet available for sale.</p>
+                <p><a id="click_here" class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-4">
+                <h2>Tips for expo participant</h2>
+                <p>Here are some tips if you want to be a Stallholder or Cosplayer. How to prepare a printed product? How to get started with cosplay? How to prepare for a long queue in some expo? Here are the answers. </p>
+                <p><a id="click_me" class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div>
+            </div>
+            <hr>
+      </div> <!-- /container -->
+        <!-- Footer-->
+
+      <script>
+
+            let click_name = document.querySelector("#click_me") 
+            click_me.addEventListener("click", alert_click)
+            click_here.addEventListener("click", alert_click)
+
+            function alert_click() {
+            alert("You have clicked here! Thank you! ")
+            } 
+
+      </script>
+
+{% endblock %}

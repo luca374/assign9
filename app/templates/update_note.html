@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block header %}
+    <!-- Page Header-->
+    <div class="jumbotron">
+        <div class="container">
+           <h1>{{title}}</h1>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+        <!-- Post Content-->
+        <div class="container">
+        <div class="new-note">
+        <form method='POST' action=''>
+            {{form.hidden_tag()}}
+            {{form.title.label(class="form-label")}}<br>  
+            {{form.title(class="form-control")}}
+            {{form.note_body.label(class="form-label")}}
+            {{form.note_body(rows='3',cols='100',class="form-control",id="editor")}}
+            {{form.submit(class="btn btn-primary")}}
+        </form>
+    </div>
+        </div>
+        <!-- Footer-->
+{% endblock %}

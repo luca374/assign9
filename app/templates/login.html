@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block header %}
+    <!-- Page Header-->
+    <div class="jumbotron">
+        <div class="container">
+           <h1>{{title}}</h1>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+        <!-- Post Content-->
+        <div class="container">
+        <form method='POST' action=''>
+            {{form.hidden_tag()}}
+            {{form.username.label(class="form-label")}}<br>   
+            {{form.username(class="form-control")}}<br>
+            {{form.password.label(class="form-label")}}<br>
+            {{form.password(class="form-control")}}<br>
+            {{form.submit(class="btn btn-primary")}}
+        </form>
+        </div>
+        <!-- Footer-->
+{% endblock %}
+
